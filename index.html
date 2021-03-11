@@ -2,9 +2,60 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>花</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
-    hello world
+
+    <img src="images/title.jpg" alt="title" id="titlePic">
+
+    <!-- The Modal -->
+    <div id="titleModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img_title">
+    </div>
+
+    <img src="images/main.jpg" alt="main" id="mainPic">
+
+    <!-- The Modal -->
+    <div id="mainModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img_main">
+    </div>
+
+
+
+
+
+    <div id="slidingBG">
+
+    </div>
+
+
+
+
+
+    <div id="audioDiv">
+      <p id="audioText">upload your performance audio</p>
+      <input type="file" id="upload" />
+      <audio id="audio" controls>
+        <source src="" id="src" />
+      </audio>
+    </div>
+
+    <p id="musicNote">&#9835;</p>
+    <audio id="standAudio" autoplay loop>
+      <source src="audio/musicStand.wav" type="audio/wav">
+    </audio>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
